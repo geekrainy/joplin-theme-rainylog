@@ -18,6 +18,7 @@
   margin: 0 8px !important;
   border: none !important;
   transition: all .2s ease;
+  cursor: pointer !important;
 }
 
 .editor-toolbar .button:not(.disabled):hover, .header .button:not(.disabled):hover {
@@ -76,18 +77,41 @@
 
 .item-list.note-list > div {
   border: none !important;
+  background: #f8f9f9 !important;
+  border-left: 4px solid #f8f9f9;
 }
 
-.side-bar + div[style*="810px"] {
-  background: #1a1a1a !important;
-  opacity: 1 !important;
+.item-list.note-list .list-item {
+  transition: all .2s ease;
 }
 
-div[style*="810px"]:last-child {
-  background: #fff !important;
-  opacity: 1 !important;
+.item-list.note-list .list-item:hover {
+  background: #ebf0f2 !important;
+}
+
+div[style*="810px"] {
+  width: 3px !important;
 }
 
 .item-list.note-list div[style*="rgb(229, 229, 229)"] {
   background: #ebf0f2 !important;
+  border-left: 4px solid #399eac !important;
 }
+
+.synchronize-button {
+  border-color: #3a3a3a !important;
+  margin: 16px 8px !important;
+  background: #373738;
+  border-radius: 2px;
+}
+
+.editor-toolbar {
+  background: #ebf0f2;
+  margin-top: 0 !important;
+}
+
+.editor-toolbar a.button:hover {
+  background: none !important;
+  border: none !important;
+}
+
