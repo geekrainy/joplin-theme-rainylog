@@ -1,0 +1,93 @@
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+
+.header {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #3a3a3a!important;
+  height: 40px!important;
+  align-items: center;
+}
+
+.header a, .header .fa {
+  color: #ccc !important;
+}
+
+.header .button {
+  height: 24px !important;
+  padding: 0 12px !important;
+  border-radius: 8px !important;
+  margin: 0 8px !important;
+  border: none !important;
+  transition: all .2s ease;
+}
+
+.editor-toolbar .button:not(.disabled):hover, .header .button:not(.disabled):hover {
+  border: none !important;
+  background: #1b85b9;
+  box-shadow: 0px 0px 1px #00adff inset;
+}
+
+.header input {
+  border-radius: 15px;
+  width: 200px !important;
+  padding: 0 12px !important;
+}
+
+.side-bar {
+  background: #1a1a1a !important;
+}
+
+.side-bar a {
+  cursor: pointer!important;
+}
+
+.list-item-container {
+  height: 32px !important;
+  transition: all .2s ease;
+}
+
+.list-item-container:hover {
+  background-color: #333!important;
+}
+
+.list-item-container a {
+  font-size: 14px !important;
+}
+
+.list-item-container[style*="rgb(2, 105, 194)"] {
+  background-color: #404040 !important;
+}
+
+.list-item-container[style*="rgb(2, 105, 194)"] a {
+  color: #e6e6e6 !important;
+  font-weight: bold;
+}
+
+.list-item {
+  color: #666 !important;
+}
+
+.synchronize-button {
+  border-color: #3a3a3a !important;
+}
+
+.item-list.note-list {
+  background: #f8f9f9;
+}
+
+.item-list.note-list > div {
+  border: none !important;
+}
+
+.side-bar + div[style*="810px"] {
+  background: #1a1a1a !important;
+  opacity: 1 !important;
+}
+
+div[style*="810px"]:last-child {
+  background: #fff !important;
+  opacity: 1 !important;
+}
+
+.item-list.note-list div[style*="rgb(229, 229, 229)"] {
+  background: #ebf0f2 !important;
+}
